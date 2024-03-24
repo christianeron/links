@@ -3,31 +3,57 @@
 
 <head>
   <title>CE Links</title>
-  
+
   <style>
-    body{
+   * {
+    border: thin red solid;
+   }
+   
+   .items {
+      display:flex;
+      flex-direction: column;
+      gap: 30px;
+      max-width: 640px;
+      flex-grow: 1;
+    }
+   
+   body {
       padding-top: 40px;
       padding-bottom: 40px;
-      background-color: #fffffe;
+      background-color: #c3ceda;
+      display: flex;
+      justify-content: center;
     }
     
-    .banner-image{
+    .banner {
+      display: flex;
+      justify-content: center;
+    }
+
+    .banner-image {
       width: 128px;
       height: 128px;
       object-fit: cover;
       border-radius: 128px;
     }
 
-    .name{
-      color: #094067;
+    .name {
+      color: #071330;
+      display: flex;
+      justify-content: center;
+    }
+
+    .social-icons {
+      display: flex;
+      justify-content: space-around;
     }
 
     .social-icons a {
-      color: #094067;
+      color: #071330;
       text-decoration: none;
     }
 
-    .thumbnail{
+    .thumbnail {
       width: 48px;
       height: 48px;
       border-radius:48px;
@@ -35,17 +61,19 @@
     }
 
     .link {
-      background-color: #3da9fc;
+      background-color: #0f4a6f;
+      display:flex;
+      align-items: center;
+      padding: 5px;
     }
 
     .link a {
-      color: #ffffe;
+      color: #fffffe;
       text-decoration: none;
+      flex-grow: 1;
+      text-align: center
     }
 
-    .items{
-      display:flex;
-    }
   </style>
 </head>
 
